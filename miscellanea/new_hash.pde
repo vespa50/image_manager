@@ -86,7 +86,7 @@ float hash(PImage scale,int dim){
 // Driver code
 void setup()
 {
-    File f = new File("C:\\Users\\trava\\Desktop\\data\\in\\busy1\\Hyper_05");
+    File f = new File("C:\\Users\\trava\\Desktop");
     files=f.listFiles();
     for(int s=0;s<files.length;s++){
       if(files[s].isDirectory()){
