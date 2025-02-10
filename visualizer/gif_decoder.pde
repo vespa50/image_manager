@@ -40,7 +40,7 @@ public class Gif {
   private PImage buff[]=new PImage[buffsize];
   private PImage img;
   private int prevt=0;
-  private int i=0;
+  private int i=1;
   private int del;
   private float resize_x=1;
   private float resize_y=1;
@@ -54,7 +54,7 @@ public class Gif {
     framec=gd.getFrameCount();
     del=gd.getDelay(0);
     prevt=millis();
-    i=0;
+    i=1;
     for (int j=0; j<buffsize; j++) {
       buff [j]=buf_to_img(gd.getFrame((j+buffsize)%framec));
     }
